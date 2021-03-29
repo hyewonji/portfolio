@@ -15,6 +15,7 @@ const GlobalStyles = createGlobalStyle`
     }
     html,
     body{
+        padding-top: 50px;
         display:flex;
         width: 100vw;
         height: auto;
