@@ -1,10 +1,14 @@
 import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
 
-const GlobalStyles = createGlobalStyle`
-    @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+const GlobalStyles = createGlobalStyle`<style>
+
     ${reset};
-    *{
+
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap');
+
+    *{  
+        font-family: 'Noto Sans KR', sans-serif;
         box-sizing: border-box;
         margin:0;
         padding:0;
@@ -15,7 +19,7 @@ const GlobalStyles = createGlobalStyle`
     }
     html,
     body{
-        padding-top: 50px;
+        padding-top: 70px;
         display:flex;
         width: 100vw;
         height: auto;

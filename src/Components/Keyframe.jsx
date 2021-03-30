@@ -27,6 +27,24 @@ export const slideDown = keyframes`
     }
 `
 
+export const slideUpNav = keyframes`
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100);
+    }
+`
+
+export const slideDownNav = keyframes`
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+`
+
 export const slideUpLittle = keyframes`
     0% {
         transform: translateY(30%);
