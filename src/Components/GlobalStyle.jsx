@@ -8,6 +8,7 @@ const GlobalStyles = createGlobalStyle`<style>
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap');
 
     *{  
+        line-height:1.5;
         font-family: 'Noto Sans KR', sans-serif;
         box-sizing: border-box;
         margin:0;

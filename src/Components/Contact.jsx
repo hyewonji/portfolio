@@ -8,8 +8,10 @@ const ContactContainer = styled.div`
     font-size: 14px;
     padding: 0 50px 30px 0;
     position: absolute;
+    position: fixed;
     right: 0;
     bottom: 0;
+    background: white;
 `
 
 const GitIcon = styled.img`
