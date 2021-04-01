@@ -72,3 +72,11 @@ export const slideLeft = keyframes`
         transform: translateX(-100%);
     }
 `
+
+export const typing = keyframes`
+    from{ width: 0; }
+`
+
+export const cursor = keyframes`
+    50%{ border-color: transparent; }
+`

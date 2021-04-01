@@ -14,23 +14,24 @@ import About2 from '../Images/About2.png';
 
 import About4 from '../Images/About4.png';
 
-import CSS from '../Images/CSS.png';
+import CSS from '../Images/Icon/CSS.png';
 
-import HTML from '../Images/HTML.png';
+import HTML from '../Images/Icon/HTML.png';
 
-import JS from '../Images/JS.png';
+import JS from '../Images/Icon/JS.png';
 
-import ReactI from '../Images/ReactI.png';
+import ReactI from '../Images/Icon/ReactI.png';
 
-import Redux from '../Images/Redux.png';
+import Redux from '../Images/Icon/Redux.png';
 
-import Python from '../Images/Python.png';
+import Python from '../Images/Icon/Python.png';
 
-import NodeJS from '../Images/NodeJS.png';
+import NodeJS from '../Images/Icon/NodeJS.png';
 
-import MongoDB from '../Images/MongoDB.png';
+import MongoDB from '../Images/Icon/MongoDB.png';
 
-import Git from '../Images/Git.png';
+import Git from '../Images/Icon/Git.png';
+
 
 const ImageContainer = styled.div`
     display: flex;

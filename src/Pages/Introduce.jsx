@@ -4,6 +4,9 @@ import styled from 'styled-components';
 
 import Introduce from '../Images/Introduce.png';
 
+import { typing, cursor } from '../Components/Keyframe';
+
+
 const Main = styled.div`
     width :100vw;
     display: flex;
@@ -49,6 +52,7 @@ const Contents = styled.p`
     font-size: 19px;
     font-weight: 300;
     width: 50%;
+    animation: ${typing} 2.5s steps(5), ${cursor} 1s steps(1) infinite;
 `
 
 function Home(){

@@ -6,6 +6,7 @@ import About1 from '../Images/About1.png';
 
 import { Study1, Study2, TechStackFrontend, TechStackBackend } from '../Components/AboutImageSlider';
 
+
 const Main = styled.main`
   width: 100vw;
   padding: 45px 11% 30px 11%;

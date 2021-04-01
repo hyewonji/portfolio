@@ -1,12 +1,16 @@
 import React from 'react';
+
 import styled from 'styled-components';
-import Contact1 from '../Images/Contact1.png';
+
+import Github from '../Images/Favicon/Github.png';
+
 
 const ContactContainer = styled.div`
     display: flex;
     align-items: center;
     font-size: 14px;
-    padding: 0 50px 30px 0;
+    margin: 0 50px 30px 10px;
+    border-radius: 10px;
     position: absolute;
     position: fixed;
     right: 0;
@@ -24,7 +28,7 @@ function Contact(){
         <ContactContainer>
             +82 10-7238-8873&nbsp; / &nbsp;wlgpdnjs8873@naver.com&nbsp; / &nbsp; 
             <a href='https://github.com/hyewonji'>
-                <GitIcon src={Contact1}></GitIcon>
+                <GitIcon src={Github}></GitIcon>
             </a>
         </ContactContainer>
     )

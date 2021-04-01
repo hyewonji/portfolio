@@ -1,7 +1,9 @@
 import { createGlobalStyle } from 'styled-components';
+
 import reset from 'styled-reset';
 
-const GlobalStyles = createGlobalStyle`<style>
+
+const GlobalStyles = createGlobalStyle`
 
     ${reset};
 
@@ -28,6 +30,9 @@ const GlobalStyles = createGlobalStyle`<style>
     }
     a{
         color: #0f0f0f;
+    }
+    h1{
+        color: #3a3a3a;
     }
 `
 
