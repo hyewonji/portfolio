@@ -39,7 +39,6 @@ const Content = styled.div`
     background: #F2F2F2;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     overflow: scroll;
 `
 
@@ -201,15 +200,15 @@ function Projects(){
                     <Content>
                         <Title>Search Recruitment</Title>
                         <Discription>
-                            <ET>전세계 수도</ET>의 <ET>현재 날씨</ET>를 불러오는 페이지입니다.<br/>
-                            수도를 검색하면 해당 수도의 현재날씨를 불러오고 날씨 카드를 추가할 수 있습니다.<br/>
-                            추가된 날씨카드는 메인 페이지('/home')에서 볼 수 있습니다.<br/>
+                            <ET>3개의 사이트</ET>(Remote OK, Stack Overflow, We Work Remotely)에서<br/> 
+                            <ET>구직공고를 스크래핑해서 한 페이지에 보여주는 웹 페이지</ET> 입니다..<br/>
+                            구직관련 키워드를 입력후 제출하면 각각의 페이지에서 관련 구직공고를 스크래핑해서 화면에 보여줍니다.<br/>
+                            해당 구직공고 링크를 제공하고, 검색한 구직공고를 CSV 파일로 내려받는 기능을 제공합니다.<br/>
                             <br/>
-                            Geolocation API와 OpenWeatherMap API를 통해<br/> 
-                            현재 위치와 검색한 도시의 위치를 불러옵니다.<br/>
-                            UseContext, CreateContext, Dispatch로 날씨카드 상태를 관리합니다.<br/>
-                            NodeJS와 MongoDB, express, body-pharser의 패키지를 사용했으며,<br/> 
-                            로컬에서 회원가입과 로그인이 가능하도록 구현했습니다.<br/>
+                            request, BeautifulSoup로 구직사이트의 url을 사용해 html정보를 가져옵니다.<br/>
+                            이때, URL Parmeter을 이용해 정보를 얻어올 페이지에 접근합니다.<br/>
+                            Export to CSV 버튼 클릭시, 불러온 모든 정보를 CSV 파일로 보여주며, 다운받을수 있습니다.<br/>
+                            한번 검색한 키워드는 Fack DB 배열안에 저장되어 있어 재검색을 할 경우 시간소요가 되지 않습니다.<br/>
                         </Discription>
                         <TechStack>
                             <Tag>Reactjs</Tag>
@@ -225,7 +224,7 @@ function Projects(){
                             </UrlList>
                             <UrlList>
                                 <UrlIcon src={Repl}></UrlIcon>
-                                <Url href='https://replit.com/@hyewonji/Sub-Reddits#main.py'>https://replit.com/@hyewonji/Sub-Reddits#main.py</Url>
+                                <Url href='https://replit.com/@hyewonji/SearchRecruitment#main.py'>https://replit.com/@hyewonji/SearchRecruitment#main.py</Url>
                             </UrlList>
                         </UrlContainer>
                     </Content>
@@ -235,22 +234,22 @@ function Projects(){
                     <Content>
                         <Title>Sub Raddit</Title>
                         <Discription>
-                            <ET>전세계 수도</ET>의 <ET>현재 날씨</ET>를 불러오는 페이지입니다.<br/>
-                            수도를 검색하면 해당 수도의 현재날씨를 불러오고 날씨 카드를 추가할 수 있습니다.<br/>
-                            추가된 날씨카드는 메인 페이지('/home')에서 볼 수 있습니다.<br/>
+                            <ET>미국의 소셜 뉴스 초대형 커뮤니티 Reddit</ET>에서 원하는 정보를 <ET>스크래핑</ET> 하는 페이지입니다.<br/>
+                            체크박스로 원하는 개발 키워드를 표시하고 제출합니다.<br/>
+                            새로운 페이지에서 체크된 키워드의 정보를 upvote 수의 내림차순으로 정렬해서 화면에 보여줍니다.<br/>
                             <br/>
-                            Geolocation API와 OpenWeatherMap API를 통해<br/> 
-                            현재 위치와 검색한 도시의 위치를 불러옵니다.<br/>
-                            UseContext, CreateContext, Dispatch로 날씨카드 상태를 관리합니다.<br/>
-                            NodeJS와 MongoDB, express, body-pharser의 패키지를 사용했으며,<br/> 
-                            로컬에서 회원가입과 로그인이 가능하도록 구현했습니다.<br/>
+                            request, BeautifulSoup로 Reddit 페이지의 url을 사용해 html정보를 가져옵니다.<br/>
+                            flask 모듈의 request로 home.html의 체크박스가 체크된 input의 value를 불러옵니다.
+                            flask 모듈의 Flask, render_template로 웹 페이지에 불러온 정보를 정렬해서 보여줍니다.
+                            html에서 for문을 사용해 짧은 코드로 반복작업을 할 수 있게 했습니다.
                         </Discription>
                         <TechStack>
-                            <Tag>Reactjs</Tag>
-                            <Tag>React Hook</Tag>
-                            <Tag>Redux</Tag>
-                            <Tag>webpack</Tag>
-                            <Tag>Axios</Tag>
+                            <Tag>Python</Tag>
+                            <Tag>Flask</Tag>
+                            <Tag>BeautifulSoup</Tag>
+                            <Tag>Render Template</Tag>
+                            <Tag>HTML</Tag>
+                            <Tag>CSS</Tag>
                         </TechStack>
                         <UrlContainer>
                             <UrlList>
