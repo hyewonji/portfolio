@@ -2,18 +2,20 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-import Introduce from '../Images/Introduce.png';
+import ProfileImg from '../Images/ProfileImg.jpeg';
 
-import { typing, cursor } from '../Components/Keyframe';
+import { typing, cursor, fadein } from '../Components/Keyframe';
 
 
 const Main = styled.div`
+    line-height: 1.5;
     width :100vw;
     display: flex;
     flex-direction:column;
     justify-content: center;
     align-items: center;
     padding: 30px 10%;
+    animation: 2s ${fadein} ease-in-out; 
 `
 
 const Title = styled.div`
@@ -26,13 +28,13 @@ const Title = styled.div`
 
 const TitleName = styled.h1`
     color: #9178d1;
-    font-size: 50px;
-    font-weight: 500px;
+    font-weight: 600;
+    font-size: 60px;
 `
 const TitlePosition = styled.h5`
     color: #cfc6e6;
     font-size: 30px;
-    font-weight: 400px;
+    font-weight: 700;
 `
 
 const Profile = styled.div`
@@ -41,8 +43,8 @@ const Profile = styled.div`
     justify-content: space-around;
 `
 const Image = styled.img`
-    width: 300px;
-    height: 300px;
+    width: 330px;
+    height: 330px;
     border-radius: 50%;
 `
 const Contents = styled.p`
@@ -52,7 +54,7 @@ const Contents = styled.p`
     font-size: 19px;
     font-weight: 300;
     width: 50%;
-    animation: ${typing} 2.5s steps(5), ${cursor} 1s steps(1) infinite;
+    //animation: ${typing} 2.5s steps(5), ${cursor} 1s steps(1) infinite;
 `
 
 function Home(){
@@ -63,7 +65,7 @@ function Home(){
                 <TitlePosition>Frontend Developer, Web Publisher</TitlePosition>
             </Title>
             <Profile>
-                <Image src={Introduce}></Image>
+                <Image src={ProfileImg}></Image>
                 <Contents>
                 함께 성장하고자 하는 개발자의 문화를 사랑하고,<br/>탐구하는것을 즐기는 늦바람난 개발자입니다.<br/>
                 <br/>‘지금 이순간 춤을 춰라'라는 말을 좋아하고, 근성과 도전정신으로 끊임없이 성장합니다.<br/>

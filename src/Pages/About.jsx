@@ -6,11 +6,14 @@ import About1 from '../Images/About1.png';
 
 import { Study1, Study2, TechStackFrontend, TechStackBackend } from '../Components/AboutImageSlider';
 
+import { fadein } from '../Components/Keyframe';
+
 
 const Main = styled.main`
   width: 100vw;
   padding: 45px 11% 30px 11%;
   height: auto;
+  animation: 2s ${fadein} ease-in-out; 
 `
 
 const Line = styled.div`

@@ -16,11 +16,15 @@ import Reddit from '../Images/Favicon/Reddit.png';
 
 import JobSearch from '../Images/Favicon/JobSearch.png';
 
+import { fadein } from '../Components/Keyframe';
+
 
 const Main = styled.div`
-  width: 100vw;
-  height: auto;
-  padding: 0 100px;
+    width: 100vw;
+    height: auto;
+    padding: 0 100px;
+    margin-top: 30px;
+    animation: 2s ${fadein} ease-in-out; 
 `
 const List = styled.ul``
 const Project = styled.li`
