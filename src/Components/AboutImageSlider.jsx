@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 import Carousel from 'react-material-ui-carousel'
 
-import { Paper, Button } from '@material-ui/core'
+import { Paper } from '@material-ui/core'
 
 import ArrowForwardIos from '@material-ui/icons/ArrowForwardIos';
 
@@ -38,26 +38,21 @@ const ImageContainer = styled.div`
     justify-content: center;
     align-items: center;
     width: 90%;
-    color: blue;
+    background: blue;
     overflow: scroll;
-    transform: translateX(-(selected-1)*300px);
+    //transform: translateX(-(selected-1)*300px);
 `
 
-const Image1 = styled.div`
+const Image = styled.div`
     width: 100%;
     height: 29vw;
-    background : url(${About2}) center center/cover no-repeat;
-`
-
-
-const Image3 = styled.div`
-    width: 100%;
-    height: 29vw;
-    background : url(${About4}) center center/cover no-repeat;
+    background : url(${props => props.img}) center center/cover no-repeat;
 `
 
 const IconContainer = styled.div`
     display: flex;
+    width: 100%;
+    height: 29vw; 
 `
 
 const icon = {
@@ -68,61 +63,52 @@ const icon = {
 
 export const Study1 = (props) => 
 {
-    var items = [
-        <Paper style={{width: ''}}>
-            <ImageContainer>
-                <Image1></Image1>
-            </ImageContainer>
-
-            <Button className="CheckButton">
-            </Button>
-        </Paper>,        
-        <Paper style={{width: ''}}>
-            <ImageContainer>
-                <Image3></Image3>
-            </ImageContainer>
-
-            <Button className="CheckButton">
-            </Button>
-        </Paper>
-    ]
+    var items = [About2, About4];
 
     return (
         <Carousel
         NextIcon={<ArrowForwardIos/>}
         PrevIcon={<ArrowBackIosIcon/>}
+        navButtonsAlwaysVisible={true}
+        animation='slide'        
+        indicatorIconButtonProps={{
+            style: {
+                display: 'none'    
+            }
+        }}
         >
-            {items}
+            {items.map((item,i) =>
+                <Paper>
+                    <ImageContainer>
+                        <Image img={item} i={i}/>
+                    </ImageContainer>
+                </Paper> )}
         </Carousel>
     )
 }
 
 export const Study2 = (props) => 
 {
-    var items = [ 
-        <Paper style={{width: ''}}>
-            <ImageContainer>
-                <Image3 />
-            </ImageContainer>
-
-            <Button className="CheckButton">
-            </Button>
-        </Paper>,        
-        <Paper style={{width: ''}}>
-            <ImageContainer>
-                <Image3 />
-            </ImageContainer>
-            <Button className="CheckButton">
-            </Button>
-        </Paper>,
-    ]
+    var items = [ About2, About4 ]
 
     return (
         <Carousel
         NextIcon={<ArrowForwardIos/>}
         PrevIcon={<ArrowBackIosIcon/>}
+        navButtonsAlwaysVisible={true}
+        animation='slide'    
+        indicatorIconButtonProps={{
+            style: {
+                display: 'none'    
+            }
+        }}
         >
-            {items}
+            {items.map((item,i) =>
+                <Paper>
+                    <ImageContainer>
+                        <Image img={item} i={i}/>
+                    </ImageContainer>
+                </Paper> )}
         </Carousel>
     )
 }

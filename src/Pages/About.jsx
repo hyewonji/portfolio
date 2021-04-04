@@ -11,7 +11,7 @@ import { fadein } from '../Components/Keyframe';
 
 const Main = styled.main`
   width: 100vw;
-  padding: 45px 11% 30px 11%;
+  padding: 30px 11% 30px 11%;
   height: auto;
   animation: 2s ${fadein} ease-in-out; 
 `
@@ -52,6 +52,7 @@ const Dot = styled.div`
 `
 
 const Board = styled.div`
+  
 `
 
 const List = styled.div`

@@ -18,6 +18,13 @@ import JobSearch from '../Images/Favicon/JobSearch.png';
 
 import { fadein } from '../Components/Keyframe';
 
+import { 
+    WWWImgSlider, 
+    MovieDockerImgSlider, 
+    PurpleToDoListImageSlider, 
+    SearchRecruitmentImageSlider, 
+    SubRedditImageSlider } from '../Components/ProjectImageSlider';
+
 
 const Main = styled.div`
     width: 100vw;
@@ -34,7 +41,9 @@ const Project = styled.li`
 const Image = styled.div`
     width:50%;
     height: 70vh;
-    border: solid 1px red;
+    border: solid 1px #ececec;
+    border-right: none;
+    overflow: hidden;
 `
 const Content = styled.div`
     padding: 30px 30px;
@@ -95,7 +104,9 @@ function Projects(){
         <Main>
             <List>
                 <Project>
-                    <Image></Image>
+                    <Image>
+                        <WWWImgSlider />
+                    </Image>
                     <Content>
                         <Title>WWW(Word-Wide-Weather)</Title>
                         <Discription>
@@ -129,7 +140,9 @@ function Projects(){
                     </Content>
                 </Project>
                 <Project>
-                    <Image></Image>
+                    <Image>
+                        <MovieDockerImgSlider/>
+                    </Image>
                     <Content>
                         <Title>Movie Docker</Title>
                         <Discription>
@@ -163,7 +176,9 @@ function Projects(){
                     </Content>
                 </Project>
                 <Project>
-                    <Image></Image>
+                    <Image>
+                        <PurpleToDoListImageSlider />
+                    </Image>
                     <Content>
                         <Title>Purple TodoList</Title>
                         <Discription>
@@ -200,7 +215,9 @@ function Projects(){
                     </Content>
                 </Project>
                 <Project>
-                    <Image></Image>
+                    <Image>
+                        <SearchRecruitmentImageSlider />
+                    </Image>
                     <Content>
                         <Title>Search Recruitment</Title>
                         <Discription>
@@ -224,7 +241,7 @@ function Projects(){
                         <UrlContainer>
                             <UrlList>
                                 <UrlIcon src={JobSearch}></UrlIcon>
-                                <Url href='https://sub-reddits.hyewonji.repl.co/'>https://sub-reddits.hyewonji.repl.co/</Url>
+                                <Url href='https://SearchRecruitment.hyewonji.repl.co'>https://SearchRecruitment.hyewonji.repl.co</Url>
                             </UrlList>
                             <UrlList>
                                 <UrlIcon src={Repl}></UrlIcon>
@@ -234,9 +251,11 @@ function Projects(){
                     </Content>
                 </Project>
                 <Project>
-                    <Image></Image>
+                    <Image>
+                        <SubRedditImageSlider />
+                    </Image>
                     <Content>
-                        <Title>Sub Raddit</Title>
+                        <Title>Sub Reddit</Title>
                         <Discription>
                             <ET>미국의 소셜 뉴스 초대형 커뮤니티 Reddit</ET>에서 원하는 정보를 <ET>스크래핑</ET> 하는 페이지입니다.<br/>
                             체크박스로 원하는 개발 키워드를 표시하고 제출합니다.<br/>
@@ -258,7 +277,7 @@ function Projects(){
                         <UrlContainer>
                             <UrlList>
                                 <UrlIcon src={Reddit}></UrlIcon>
-                                <Url href='https://sub-reddits.hyewonji.repl.co/'>https://sub-reddits.hyewonji.repl.co/</Url>
+                                <Url href='https://sub-reddits.hyewonji.repl.co/'>https://sub-reddits.hyewonji.repl.co</Url>
                             </UrlList>
                             <UrlList>
                                 <UrlIcon src={Repl}></UrlIcon>

@@ -16,6 +16,7 @@ const NavBar = styled.div`
     width: 100vw;
     position: fixed;
     z-index: 100;
+    margin-bottom: ${props => props.navOpen ? '30px' : '0'};
 `
 
 const Title = styled.h1`
@@ -50,6 +51,7 @@ const Bars = styled.div`
 const List = styled.div`
     display: ${props => props.navOpen ? 'flex' : 'none'};
     justify-content: space-around;
+    align-items: center;
     width: 100%;
     font-size: 17px;
     border-bottom: solid 1px #cecece; 
@@ -81,7 +83,7 @@ const Navigatoin = withRouter(({ location: { pathname } }) => {
                 <List navOpen={navOpen}>
                     <Link to="/" >
                         <Item current={pathname === '/'}>
-                            Indroduce
+                            Introduce
                         </Item>
                     </Link>
                     <Link to="/about" >
