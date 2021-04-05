@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.js": "/portfolio/static/js/main.0e687737.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.0e687737.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.a9f76519.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.a9f76519.js.map",
+    "static/js/2.fc6c217d.chunk.js": "/portfolio/static/js/2.fc6c217d.chunk.js",
+    "static/js/2.fc6c217d.chunk.js.map": "/portfolio/static/js/2.fc6c217d.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "static/js/2.fc6c217d.chunk.js.LICENSE.txt": "/portfolio/static/js/2.fc6c217d.chunk.js.LICENSE.txt",
+    "static/media/AddCity.70e887b9.png": "/portfolio/static/media/AddCity.70e887b9.png",
+    "static/media/Detail.dc7d0a1b.png": "/portfolio/static/media/Detail.dc7d0a1b.png",
+    "static/media/FirstProblem1.799fdc20.png": "/portfolio/static/media/FirstProblem1.799fdc20.png",
+    "static/media/FirstProblem2.6cd1869e.png": "/portfolio/static/media/FirstProblem2.6cd1869e.png",
+    "static/media/FirstSolution1.dd745512.png": "/portfolio/static/media/FirstSolution1.dd745512.png",
+    "static/media/FirstSolution2.cec17970.png": "/portfolio/static/media/FirstSolution2.cec17970.png",
+    "static/media/Github.1cb06369.png": "/portfolio/static/media/Github.1cb06369.png",
+    "static/media/Home.7b2269a2.png": "/portfolio/static/media/Home.7b2269a2.png",
+    "static/media/JobHome.5d399720.png": "/portfolio/static/media/JobHome.5d399720.png",
+    "static/media/JobReport.af2b31b3.png": "/portfolio/static/media/JobReport.af2b31b3.png",
+    "static/media/Login.88074ab1.png": "/portfolio/static/media/Login.88074ab1.png",
+    "static/media/Movies.bc8a666c.png": "/portfolio/static/media/Movies.bc8a666c.png",
+    "static/media/Navigator.c2480076.png": "/portfolio/static/media/Navigator.c2480076.png",
+    "static/media/ProfileImg.f2a58a83.jpeg": "/portfolio/static/media/ProfileImg.f2a58a83.jpeg",
+    "static/media/RedditHome.8667cfcd.png": "/portfolio/static/media/RedditHome.8667cfcd.png",
+    "static/media/RedditReport.d96b1be5.png": "/portfolio/static/media/RedditReport.d96b1be5.png",
+    "static/media/Repl.8800fc2e.png": "/portfolio/static/media/Repl.8800fc2e.png",
+    "static/media/Search.b8131cfa.png": "/portfolio/static/media/Search.b8131cfa.png",
+    "static/media/Study1.ad0684b8.png": "/portfolio/static/media/Study1.ad0684b8.png",
+    "static/media/Study2.9778c6cc.png": "/portfolio/static/media/Study2.9778c6cc.png",
+    "static/media/Study4.93d8019b.png": "/portfolio/static/media/Study4.93d8019b.png",
+    "static/media/Study5.e057e515.png": "/portfolio/static/media/Study5.e057e515.png",
+    "static/media/TV.138c8785.png": "/portfolio/static/media/TV.138c8785.png",
+    "static/media/ToDoList.5a928063.png": "/portfolio/static/media/ToDoList.5a928063.png",
+    "static/media/ToDoList2.ea0371ab.png": "/portfolio/static/media/ToDoList2.ea0371ab.png",
+    "static/media/WWW.5a88be3d.jpg": "/portfolio/static/media/WWW.5a88be3d.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a9f76519.js",
+    "static/js/2.fc6c217d.chunk.js",
+    "static/js/main.0e687737.chunk.js"
+  ]
+}
