@@ -2,12 +2,21 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-import About1 from '../Images/About1.png';
+import Github from '../Images/About/Github.png';
 
-import { Study1, Study2, TechStackFrontend, TechStackBackend } from '../Components/AboutImageSlider';
+import { StudyImageSlider, StudyImageSlider2, TechStackFrontend, TechStackBackend } from '../Components/AboutImageSlider';
 
 import { fadein } from '../Components/Keyframe';
 
+import FirstProblem1 from '../Images/About/FirstProblem1.png';
+
+import FirstProblem2 from '../Images/About/FirstProblem2.png';
+
+import FirstSolution1 from '../Images/About/FirstSolution1.png';
+
+import FirstSolution2 from '../Images/About/FirstSolution2.png';
+
+import { MdArrowForward } from "react-icons/md";
 
 const Main = styled.main`
   width: 100vw;
@@ -22,7 +31,7 @@ const Line = styled.div`
   background: #a7a7a7;
   position: absolute;
   left: 21.5%;
-  top: 180px;
+  top: 130px;
   z-index: -10;
 `
 
@@ -30,25 +39,11 @@ const Dot = styled.div`
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: #FFE59A;
+  background: ${props => props.color};
+  margin-bottom: ${props => props.margin};
   position: relative;
   right: 10px;
   z-index:-9;
-
-  &:first-child{
-    margin-bottom: 230px;
-  }
-  &:nth-child(2){
-    margin-bottom: 383px;
-  }
-  &:nth-child(3){
-    margin-bottom: 260px;
-    background: #9bdaff;
-  }  
-  &:nth-child(4){
-    margin-bottom: 260px;
-    background: #9bdaff;
-  }
 `
 
 const Board = styled.div`
@@ -92,12 +87,13 @@ const Discription = styled.li`
 
 const ImageContainer = styled.div`
   width: 100%;
+  margin-bottom: 30px;
 `
 
 const Image1 = styled.div`
   width: 100%;
-  height: 12vw;
-  background: url(${About1}) center center/cover no-repeat;
+  height: 18vw;
+  background: url(${Github}) center center/cover no-repeat;
   margin-bottom: 50px;
 `
 
@@ -106,18 +102,56 @@ const ProjectUrl = styled.a`
   color: #ff4967;
 `
 
+
+const SubTitleProblem = styled.h4`
+  font-weight: 400;
+  font-size: 19px;
+  margin-bottom: 10px;
+`
+
+const DiscriptionProblem = styled.li`
+  line-height:1.5;
+  font-size: 19px;
+  font-weight: 100;
+  margin-bottom: 30px;
+`
+
+const ProblemImageContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
+const ProblemImage = styled.div`
+  width: 48%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`
+
+const SolveImage = styled.div``
+
 const ET = styled.span`
   font-weight: 400;
 `
+
+const style = {
+  width: '450px'
+}
+
+
 
 function About(){
   return (
     <Main>
       <Line>
-        <Dot></Dot>
-        <Dot></Dot>
-        <Dot></Dot>
-        <Dot></Dot>
+        <Dot color='#FFE59A' margin='575px'></Dot>
+        <Dot color='#FFE59A' margin='915px'></Dot>
+        <Dot color='#FFE59A' margin='760px'></Dot>
+        <Dot color='#9bdaff' margin='505px'></Dot>
+        <Dot color='#9bdaff' margin='680px'></Dot>
       </Line>
       <Board>
         <List>
@@ -138,7 +172,7 @@ function About(){
               <DiscriptionContainer>
                 <SubTitle>Match Meal Project</SubTitle>
                 <ImageContainer>
-                  <Study1></Study1>
+                  <StudyImageSlider></StudyImageSlider>
                 </ImageContainer>
                 <Discription>
                   원거리에 있는 사람들의 <ET>중간지점</ET>을 찾아 <ET>맛집</ET>과 <ET>길찾기</ET>를 제공해주는 <ET>플랫폼 개발 프로젝트</ET>를 진행중입니다.<br/> 
@@ -153,7 +187,7 @@ function About(){
                 </Discription>
                 <SubTitle>CS 공부 및 발표</SubTitle>
                 <ImageContainer>
-                  <Study2></Study2>
+                  <StudyImageSlider2></StudyImageSlider2>
                 </ImageContainer>
                 <Discription>
                   1주일에 한번씩, 1가지의 <ET>주제</ET>에 대해 깊게 공부하고 공부한 내용을 스터디원들에게 <ET>발표</ET>하며 <ET>공유</ET>하고 있습니다.<br/>
@@ -171,33 +205,44 @@ function About(){
           <ContentContainer>
             <Content>
               <DiscriptionTitle>Tack Stack</DiscriptionTitle>
-              <DiscriptionContainer>
+              <DiscriptionContainer style={{marginBottom:'180px'}}>
                 <SubTitle>Frontend</SubTitle>
                 <TechStackFrontend/>
                 <Discription></Discription>
                 <SubTitle>Backend</SubTitle>
                 <TechStackBackend/>
-                <Discription></Discription>
               </DiscriptionContainer>
             </Content>
             <Content>
               <DiscriptionTitle>문제 해결 능력</DiscriptionTitle>
               <DiscriptionContainer>
-                <SubTitle>Problems 1</SubTitle>
-                <Discription>
+                <ProblemImageContainer>
+                  <ProblemImage>
+                    <img src={FirstProblem1} style={style}></img>
+                    <img src={FirstProblem2} style={style}></img>
+                  </ProblemImage>
+                  <MdArrowForward style={{margin: '10px', fontSize: '25px', color: '#0f3586'}}/>
+                  <ProblemImage>
+                    <img src={FirstSolution1} style={style}></img>
+                    <img src={FirstSolution2} style={style}></img>
+                  </ProblemImage>
+                </ProblemImageContainer>
+                <SubTitleProblem>Problems</SubTitleProblem>
+                <DiscriptionProblem>
                   API 마커 제어하기 Sample을 이용해 사용자가 지정한 위치에 여러개의 마커를 표시 할 수 있습니다.<br/>
                   이를 이용해 한 개의 마커를 지도에서 이동시키고 마커를 놓은 지점의 위치를 얻고자 했습니다.<br/>
                   하지만 그에 해당하는 API Sample 혹은 이벤트 함수가 존재하지 않았습니다.
-                </Discription>
-                <SubTitle>Solution 1</SubTitle>
-                <Discription>
-                  Kakao Map API Docs의 마커 Method getPosition()와 이벤트 속성을 이용하여 새로운 이벤트 함수를 생성했습니다.<br/>
+                </DiscriptionProblem>
+                <SubTitleProblem>Solution</SubTitleProblem>
+                <DiscriptionProblem>
+                  Kakao Map API Docs의 마커 Method getPosition()와 이벤트 속성을 이용하여 <ET>새로운 이벤트 함수를 생성</ET>했습니다.<br/>
                   마커 드래그앤 드롭시 마커의 위치를 가져오고 위치 저장하는 상태를 변경할 수 있게 수정했습니다.
-                </Discription>
-                <SubTitle>Problems 2</SubTitle>
-                <Discription></Discription>
-                <SubTitle>Problems 3</SubTitle>
-                <Discription></Discription>
+                </DiscriptionProblem>
+
+                {/*<SubTitleProblem>Problems 2</SubTitleProblem>
+                <DiscriptionProblem></DiscriptionProblem>
+                <SubTitleProblem>Problems 3</SubTitleProblem>
+                <DiscriptionProblem></DiscriptionProblem>*/}
               </DiscriptionContainer>
             </Content>
           </ContentContainer>

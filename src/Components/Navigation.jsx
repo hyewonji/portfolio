@@ -74,9 +74,9 @@ const Navigatoin = withRouter(({ location: { pathname } }) => {
     const onClick = () => {
         setNavOpen(!navOpen);
     }
-
     return (
         <>
+
             <NavBar>
                 <Title> CodeOne </Title>
                 <Bars navOpen={navOpen}><MdKeyboardArrowDown onClick={onClick} style={{color: 'white'}}/></Bars>

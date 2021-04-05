@@ -10,9 +10,13 @@ import ArrowForwardIos from '@material-ui/icons/ArrowForwardIos';
 
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 
-import About2 from '../Images/About2.png';
+import Study1 from '../Images/About/Study1.png';
 
-import About4 from '../Images/About4.png';
+import Study2 from '../Images/About/Study2.png';
+
+import Study4 from '../Images/About/Study4.png';
+
+import Study5 from '../Images/About/Study5.png';
 
 import CSS from '../Images/Icon/CSS.png';
 
@@ -37,7 +41,7 @@ const ImageContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 100%;
     background: blue;
     overflow: scroll;
     //transform: translateX(-(selected-1)*300px);
@@ -45,14 +49,14 @@ const ImageContainer = styled.div`
 
 const Image = styled.div`
     width: 100%;
-    height: 29vw;
+    height: 30vw;
     background : url(${props => props.img}) center center/cover no-repeat;
 `
 
 const IconContainer = styled.div`
     display: flex;
     width: 100%;
-    height: 29vw; 
+    height: 3vw; 
 `
 
 const icon = {
@@ -61,9 +65,9 @@ const icon = {
     marginRight: '10px'
 }
 
-export const Study1 = (props) => 
+export const StudyImageSlider = (props) => 
 {
-    var items = [About2, About4];
+    var items = [Study1, Study2];
 
     return (
         <Carousel
@@ -87,9 +91,9 @@ export const Study1 = (props) =>
     )
 }
 
-export const Study2 = (props) => 
+export const StudyImageSlider2 = (props) => 
 {
-    var items = [ About2, About4 ]
+    var items = [ Study4, Study5 ]
 
     return (
         <Carousel
