@@ -116,8 +116,8 @@ function Projects(){
                             <br/>
                             Geolocation API와 OpenWeatherMap API를 통해<br/> 
                             현재 위치와 검색한 도시의 위치를 불러옵니다.<br/>
-                            UseContext, CreateContext, Dispatch로 날씨카드 상태를 관리합니다.<br/>
-                            NodeJS와 MongoDB, express, body-pharser의 패키지를 사용했으며,<br/> 
+                            State, Dispatch, useReducer로 회원정보를 관리합니다.<br/>
+                            NodeJS와 MongoDB, express, body-pharser의 패키지를 사용해 로컬에서 백앤드 구현을 했습니다.<br/> 
                             로컬에서 회원가입과 로그인이 가능하도록 구현했습니다.<br/>
                         </Discription>
                         <TechStack>
@@ -130,11 +130,11 @@ function Projects(){
                         <UrlContainer>
                             <UrlList>
                                 <UrlIcon src={WWW}></UrlIcon>
-                                <Url href='https://hyewonji.github.io/project-react-hyewonji/#/home'>https://hyewonji.github.io/project-react-hyewonji/#/home</Url>
+                                <Url href='https://hyewonji.github.io/world-wide-weather/#/'>https://hyewonji.github.io/world-wide-weather/#/</Url>
                             </UrlList>
                             <UrlList>
                                 <UrlIcon src={Github}></UrlIcon>
-                                <Url href='https://github.com/hyewonji/project-react-hyewonji'>https://github.com/hyewonji/project-react-hyewonji</Url>
+                                <Url href='https://github.com/hyewonji/world-wide-weather/tree/feature/login-frontend'>https://github.com/hyewonji/world-wide-weather/tree/feature/login-frontend</Url>
                             </UrlList>
                         </UrlContainer>
                     </Content>
@@ -166,11 +166,11 @@ function Projects(){
                         <UrlContainer>
                             <UrlList>
                                 <UrlIcon src={MS}></UrlIcon>
-                                <Url href='https://hyewonji.github.io/nomflix'>https://hyewonji.github.io/nomflix</Url>
+                                <Url href='https://hyewonji.github.io/moviedocker'>https://hyewonji.github.io/moviedocker</Url>
                             </UrlList>
                             <UrlList>
                                 <UrlIcon src={Github}></UrlIcon>
-                                <Url href='https://github.com/hyewonji/nomflix'>https://github.com/hyewonji/nomflix</Url>
+                                <Url href='https://github.com/hyewonji/moviedocker'>https://github.com/hyewonji/moviedocker</Url>
                             </UrlList>
                         </UrlContainer>
                     </Content>

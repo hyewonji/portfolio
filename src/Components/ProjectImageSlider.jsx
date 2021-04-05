@@ -48,7 +48,7 @@ const ImageContainer = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-    background: blue;
+    background: #F2F2F2;
     overflow: scroll;
 `
 

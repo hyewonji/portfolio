@@ -12,9 +12,15 @@ import Projects from '../Pages/Projects';
 
 import Contact from './Contact';
 
+import { Helmet } from 'react-helmet';
+
 
 export default () => (
     <Router>
+      <Helmet>
+        <link rel='icon' href="https://img.icons8.com/doodle/50/000000/tulip.png" />
+        <title>CodeMon</title>
+      </Helmet>
       <Navigation />
       <Switch>
         <Route path = '/' exact component={Introduce}></Route>

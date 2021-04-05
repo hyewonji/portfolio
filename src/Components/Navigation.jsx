@@ -78,7 +78,7 @@ const Navigatoin = withRouter(({ location: { pathname } }) => {
         <>
 
             <NavBar>
-                <Title> CodeOne </Title>
+                <Title> CodeWon </Title>
                 <Bars navOpen={navOpen}><MdKeyboardArrowDown onClick={onClick} style={{color: 'white'}}/></Bars>
                 <List navOpen={navOpen}>
                     <Link to="/" >

@@ -2,6 +2,8 @@ import React from 'react';
 
 import styled from 'styled-components';
 
+import ReactTypingEffect from 'react-typing-effect';
+
 import ProfileImg from '../Images/ProfileImg.jpeg';
 
 import { typing, cursor, fadein } from '../Components/Keyframe';
@@ -40,22 +42,38 @@ const TitlePosition = styled.h5`
 const Profile = styled.div`
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 `
 const Image = styled.img`
     width: 330px;
     height: 330px;
     border-radius: 50%;
+    margin-right: 50px;
 `
-const Contents = styled.p`
+const ContentsContainer = styled.div`
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 30px;
+    //font-size: 19px;
+    //font-weight: 300;
+    width: 40%;
+`
+
+const Greet = styled.h1`
+    font-size: 40px;
+    font-weight:300;
+    color: #535353;
+    position:relative;
+    top: 20px;
+`
+
+const Contents = styled.p`
     font-size: 19px;
     font-weight: 300;
-    width: 50%;
-    //animation: ${typing} 2.5s steps(5), ${cursor} 1s steps(1) infinite;
 `
+
 
 function Home(){
     return ( 
@@ -66,11 +84,24 @@ function Home(){
             </Title>
             <Profile>
                 <Image src={ProfileImg}></Image>
-                <Contents>
-                함께 성장하고자 하는 개발자의 문화를 사랑하고,<br/>탐구하는것을 즐기는 늦바람난 개발자입니다.<br/>
-                <br/>‘지금 이순간 춤을 춰라'라는 말을 좋아하고, 근성과 도전정신으로 끊임없이 성장하고자 합니다.<br/>
-                <br/>트렌드를 받아들이고 적용해보며 새로운 변화에 적응하는 개발자가 되고싶습니다.
-                </Contents>
+                <ContentsContainer>
+                    <Greet >안녕하세요.</Greet><br/>
+                    <ReactTypingEffect
+                        speed={70}
+                        eraseSpeed={70}
+                        text={[
+                            "함께 성장하고자 하는 개발자의 문화를 사랑하고,탐구하는것을 즐기는 늦바람난 개발자입니다.", 
+                            "‘지금 이순간 춤을 춰라'라는 말을 좋아하고, 근성과 도전정신으로 끊임없이 성장하고자 합니다.",
+                            "트렌드를 받아들이고 적용해보며 새로운 변화에 적응하는 개발자가 되고싶습니다."]}
+                        displayTextRenderer={(text, i) => {
+                            return (
+                                <Contents>
+                                    {text}
+                                </Contents>
+                              );
+                            }} 
+                    />
+                </ContentsContainer>
             </Profile>
         </Main>
     )
