@@ -43,6 +43,10 @@ const Profile = styled.div`
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+    }
 `
 const Image = styled.img`
     width: 330px;
@@ -55,10 +59,13 @@ const ContentsContainer = styled.div`
     flex-direction:column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding-top: 30px;
-    //font-size: 19px;
-    //font-weight: 300;
+    padding-top: 3vh;
     width: 40%;
+    height: 200px;
+    @media screen and (max-width: 768px){
+        padding-top: 0px;
+        width: 100%;
+    }
 `
 
 const Greet = styled.h1`

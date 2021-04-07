@@ -29,19 +29,30 @@ const Main = styled.div`
     height: auto;
     padding: 30px 100px;
     margin-top: 30px;
-    animation: 2s ${fadein} ease-in-out; 
+    animation: 2s ${fadein} ease-in-out;     
+    @media screen and (max-width: 768px){
+        padding: 30px 20px;
+    }
 `
 const List = styled.ul``
 const Project = styled.li`
     display: flex;
     margin-bottom: 120px;
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+    }
 `
 const Image = styled.div`
-    width:48%;
+    width: 48%;
     height: 70vh;
     border: solid 1px #ececec;
     border-right: none;
-    overflow: hidden;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    @media screen and (max-width: 768px){  
+        width: 100%;
+        height: 60vh;
+    }
 `
 const Content = styled.div`
     padding: 30px 30px;
@@ -51,6 +62,9 @@ const Content = styled.div`
     display: flex;
     flex-direction: column;
     overflow: scroll;
+    @media screen and (max-width: 768px){  
+        width: 100%;
+    }
 `
 
 const  Title = styled.h1`
