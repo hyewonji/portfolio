@@ -92,9 +92,12 @@ const DiscriptionTitle = styled.h3`
 const DiscriptionContainer = styled.ul``
 
 const DiscriptionDetail = styled.div`
-  background: #F2F2F2;
-  padding: 20px 25px;
   margin-bottom: 120px;
+  @media screen and (max-width: 768px){  
+    background: #F2F2F2;
+    padding: 20px 25px;
+  }
+
 `
 
 const SubTitle = styled.h4`
@@ -172,7 +175,7 @@ const ET = styled.span`
 `
 
 const style = {
-  width: '100%'
+  width: '450px'
 }
 
 
