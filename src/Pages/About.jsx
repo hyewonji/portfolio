@@ -20,7 +20,7 @@ import { MdArrowForward } from "react-icons/md";
 
 const Main = styled.main`
   width: 100vw;
-  padding: 30px 11% 30px 11%;
+  padding: 60px 11% 30px 11%;
   height: auto;
   animation: 2s ${fadein} ease-in-out; 
 `
@@ -31,7 +31,7 @@ const Line = styled.div`
   background: #a7a7a7;
   position: absolute;
   left: 21.5%;
-  top: 130px;
+  top: 160px;
   z-index: -10;
 `
 
@@ -131,8 +131,6 @@ const ProblemImage = styled.div`
   align-items: center;
 `
 
-const SolveImage = styled.div``
-
 const ET = styled.span`
   font-weight: 400;
 `
@@ -162,9 +160,9 @@ function About(){
                 <Image1 ></Image1>
                 <Discription>
                   <ET>'매일'</ET>, <ET>'꾸준히'</ET> 오래 개발을 하는것이 꿈입니다.<br/> 
-                  이러한 저의 개발자로서의 지향점을 <ET>습관</ET>으로 만들기 위해 1일 1코딩을 시작했습니다.<br/> 
-                  약 6개월간 1일 1코딩을 실천하며 <ET>20개의 Repository</ET>를 생성했습니다.<br/>
-                  <ET>Javascript</ET>, <ET>ReactJS</ET>, <ET>Python</ET>기반의 다양한 웹 프로젝트를 진행과정과, <ET>Redux</ET>, <ET>CS</ET> 등 공부한 자료들을 정리했습니다.<br/> 
+                  이러한 개발자로서의 지향점을 <ET>습관</ET>으로 만들기 위해 1일 1커밋을 시작했습니다.<br/> 
+                  약 6개월간 1일 1커밋을 실천하며 <ET>20개의 Repository</ET>를 생성했습니다.<br/>
+                  <ET>Javascript</ET>, <ET>ReactJS</ET>, <ET>Python</ET>기반의 다양한 웹 프로젝트를 진행과정과, <ET>Redux</ET>, <ET>CS</ET> 등에 대해 공부한 자료들을 정리했습니다.<br/>
                 </Discription>
               </Content>
               <Content>
@@ -181,9 +179,6 @@ function About(){
                     로그인상태, 사용자의 위치, 입력된 위치값들의 중간지점 등의 상태를 저장하고 관리하기 위해<br/> <ET>Redux</ET>와 미들웨어 <ET>Redux-thunk</ET>를 사용했습니다.<br/> 
                     <ET>GeoLocation API</ET>를 사용해 사용자의 위치를 받아오고 <ET>Kakao Map API</ET>로 지도를 사용한 다양한 기능을 구현했습니다.<br/> 
                     개발자들과의 <ET>협업</ET>하며 <ET>Git</ET>을 사용해 소통하는 방법과, 개발과정에서의 <ET>커뮤니케이션 능력</ET>을 길렀습니다.<br/> 
-                    <ProjectUrl href="https://github.com/WADE-Study-Club/project_MM/tree/frontend">
-                      <br/>https://github.com/WADE-Study-Club/project_MM/tree/frontend
-                    </ProjectUrl>
                   </Discription>
                   <SubTitle>CS 공부 및 발표</SubTitle>
                   <ImageContainer>
@@ -218,24 +213,24 @@ function About(){
                 <DiscriptionContainer>
                   <ProblemImageContainer>
                     <ProblemImage>
-                      <img src={FirstProblem1} style={style}></img>
-                      <img src={FirstProblem2} style={style}></img>
+                      <img src={FirstProblem1} alt="" style={style}></img>
+                      <img src={FirstProblem2} alt="" style={style}></img>
                     </ProblemImage>
                     <MdArrowForward style={{margin: '5px', fontSize: '30px', color: '#0f3586'}}/>
                     <ProblemImage>
-                      <img src={FirstSolution1} style={style}></img>
-                      <img src={FirstSolution2} style={style}></img>
+                      <img src={FirstSolution1} alt="" style={style}></img>
+                      <img src={FirstSolution2} alt="" style={style}></img>
                     </ProblemImage>
                   </ProblemImageContainer>
                   <SubTitleProblem>Problems</SubTitleProblem>
                   <DiscriptionProblem>
-                    API 마커 제어하기 Sample을 이용해 사용자가 지정한 위치에 여러개의 마커를 표시 할 수 있습니다.<br/>
+                    Kakao Map API의 마커 제어하기 Sample을 이용해 사용자가 지정한 위치에 여러개의 마커를 표시 할 수 있습니다.<br/>
                     이를 이용해 한 개의 마커를 지도에서 이동시키고 마커를 놓은 지점의 위치를 얻고자 했습니다.<br/>
                     하지만 그에 해당하는 API Sample 혹은 이벤트 함수가 존재하지 않았습니다.
                   </DiscriptionProblem>
                   <SubTitleProblem>Solution</SubTitleProblem>
                   <DiscriptionProblem>
-                    Kakao Map API Docs의 마커 Method getPosition()와 이벤트 속성을 이용하여 <ET>새로운 이벤트 함수를 생성</ET>했습니다.<br/>
+                    <ET>Kakao Map API Docs</ET>의 마커의 Method 'getPosition()'와 이벤트 속성을 이용하여 <ET>새로운 이벤트 함수를 생성</ET>했습니다.<br/>
                     마커 드래그앤 드롭시 마커의 위치를 가져오고 위치 저장하는 상태를 변경할 수 있게 수정했습니다.
                   </DiscriptionProblem>
 

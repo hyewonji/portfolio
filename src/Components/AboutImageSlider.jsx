@@ -120,11 +120,11 @@ export const StudyImageSlider2 = (props) =>
 export const TechStackFrontend = () => {
     return (
         <IconContainer>
-                <img src={HTML} style={icon}/>
-                <img src={CSS} style={icon}/>
-                <img src={JS} style={icon}/>
-                <img src={ReactI} style={icon}/>
-                <img src={Redux} style={icon}/>
+                <img src={HTML} alt="" style={icon}/>
+                <img src={CSS} alt="" style={icon}/>
+                <img src={JS} alt="" style={icon}/>
+                <img src={ReactI} alt="" style={icon}/>
+                <img src={Redux} alt="" style={icon}/>
         </IconContainer>
     )
 }
@@ -132,10 +132,10 @@ export const TechStackFrontend = () => {
 export const TechStackBackend = () => {
     return (
         <IconContainer>
-                <img src={Python} style={icon}/>
-                <img src={NodeJS} style={icon}/>
-                <img src={MongoDB} style={icon}/>
-                <img src={Git} style={icon}/>
+                <img src={Python} alt="" style={icon}/>
+                <img src={NodeJS} alt="" style={icon}/>
+                <img src={MongoDB} alt="" style={icon}/>
+                <img src={Git} alt="" style={icon}/>
         </IconContainer>
     )
 }

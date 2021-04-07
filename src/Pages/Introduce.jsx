@@ -6,7 +6,7 @@ import ReactTypingEffect from 'react-typing-effect';
 
 import ProfileImg from '../Images/ProfileImg.jpeg';
 
-import { typing, cursor, fadein } from '../Components/Keyframe';
+import { fadein } from '../Components/Keyframe';
 
 
 const Main = styled.div`
@@ -16,7 +16,7 @@ const Main = styled.div`
     flex-direction:column;
     justify-content: center;
     align-items: center;
-    padding: 30px 10%;
+    padding: 60px 10%;
     animation: 2s ${fadein} ease-in-out; 
 `
 
@@ -89,9 +89,11 @@ function Home(){
                     <ReactTypingEffect
                         speed={70}
                         eraseSpeed={70}
+                        eraseDelay={600}
+                        typingDelay={600}
                         text={[
-                            "함께 성장하고자 하는 개발자의 문화를 사랑하고,탐구하는것을 즐기는 늦바람난 개발자입니다.", 
-                            "‘지금 이순간 춤을 춰라'라는 말을 좋아하고, 근성과 도전정신으로 끊임없이 성장하고자 합니다.",
+                            "함께 성장하고자 하는 개발자의 문화를 사랑하고, 탐구하는것을 즐기는 늦바람난 개발자입니다.", 
+                            "‘지금 이순간 춤을 춰라'라는 말을 좋아하며, 근성과 도전정신으로 끊임없이 성장하고자 합니다.",
                             "트렌드를 받아들이고 적용해보며 새로운 변화에 적응하는 개발자가 되고싶습니다."]}
                         displayTextRenderer={(text, i) => {
                             return (

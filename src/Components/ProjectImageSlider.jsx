@@ -43,6 +43,7 @@ import RedditHome from '../Images/SubReddit/RedditHome.png';
 
 import RedditReport from '../Images/SubReddit/RedditReport.png';
 
+
 const ImageContainer = styled.div`
     display: flex;
     justify-content: center;
@@ -77,7 +78,7 @@ export const WWWImgSlider = () =>
             {items.map((item,i) =>
                 <Paper>
                     <ImageContainer>
-                        <Image img={item} i={i}/>
+                        <Image img={item} key={i}/>
                     </ImageContainer>
                 </Paper> )}
         </Carousel> 
@@ -103,7 +104,7 @@ export const MovieDockerImgSlider = () =>
             {items.map((item,i) =>
                 <Paper>
                     <ImageContainer>
-                        <Image img={item} i={i}/>
+                        <Image img={item} key={i}/>
                     </ImageContainer>
                 </Paper> )}
         </Carousel> 
@@ -129,7 +130,7 @@ export const PurpleToDoListImageSlider = () =>
             {items.map((item,i) =>
                 <Paper>
                     <ImageContainer>
-                        <Image img={item} i={i}/>
+                        <Image img={item} key={i}/>
                     </ImageContainer>
                 </Paper> )}
         </Carousel> 
@@ -155,7 +156,7 @@ export const SearchRecruitmentImageSlider = () =>
             {items.map((item,i) =>
                 <Paper>
                     <ImageContainer>
-                        <Image img={item} i={i}/>
+                        <Image img={item} key={i}/>
                     </ImageContainer>
                 </Paper> )}
         </Carousel> 
@@ -181,7 +182,7 @@ export const SubRedditImageSlider = () =>
             {items.map((item,i) =>
                 <Paper>
                     <ImageContainer>
-                        <Image img={item} i={i}/>
+                        <Image img={item} key={i}/>
                     </ImageContainer>
                 </Paper> )}
         </Carousel> 
