@@ -40,30 +40,28 @@ const TitlePosition = styled.h5`
 `
 
 const Profile = styled.div`
-    width: 100%;
+    width: 70%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     @media screen and (max-width: 768px){
         flex-direction: column;
+        width: 100%;
     }
 `
 const Image = styled.img`
     width: 330px;
     height: 330px;
     border-radius: 50%;
-    margin-right: 50px;
 `
 const ContentsContainer = styled.div`
     display: flex;
     flex-direction:column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding-top: 3vh;
-    width: 40%;
+    width: 50%;
     height: 200px;
     @media screen and (max-width: 768px){
-        padding-top: 0px;
         width: 100%;
     }
 `

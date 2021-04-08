@@ -60,8 +60,8 @@ const IconContainer = styled.div`
 `
 
 const icon = {
-    width: '90px',
-    height: '90px',
+    width: '7vh',
+    height: '7vh',
     marginRight: '10px'
 }
 

@@ -8,6 +8,8 @@ import { StudyImageSlider, StudyImageSlider2, TechStackFrontend, TechStackBacken
 
 import { fadein } from '../Components/Keyframe';
 
+import MediaQuery from '../Components/MediaQuery';
+
 import FirstProblem1 from '../Images/About/FirstProblem1.png';
 
 import FirstProblem2 from '../Images/About/FirstProblem2.png';
@@ -22,11 +24,14 @@ const Main = styled.main`
   width: 100vw;
   padding: 60px 11% 60px 11%;
   height: auto;
-  animation: 2s ${fadein} ease-in-out; 
+  animation: 2s ${fadein} ease-in-out;
+  @media screen and (max-width: 768px){
+  padding: 60px 5% 60px 5%;
+  } 
 `
 
 const Line = styled.div`
-  height: 430%;
+  height: 480%;
   width: 1px;
   background: #a7a7a7;
   position: absolute;
@@ -156,7 +161,7 @@ const ProblemImage = styled.div`
   justify-content: center;
   align-items: center;
   @media screen and (max-width: 768px){
-    width: 100%;
+    width: 80%;
   }
 `
 
@@ -174,12 +179,17 @@ const ET = styled.span`
   font-weight: 400;
 `
 
-const style = {
-  width: '450px'
-}
+const ProblemImageList = styled.img`
+  width: 33vw;
+  @media screen and (max-width: 768px){
+    width: 120%;
+  }
+`
+
 
 
 function About(){
+  console.log(MediaQuery);
   return (
     <>
       <Main>
@@ -260,13 +270,13 @@ function About(){
                   <DiscriptionDetail>
                     <ProblemImageContainer>
                       <ProblemImage>
-                        <img src={FirstProblem1} alt="" style={style}></img>
-                        <img src={FirstProblem2} alt="" style={style}></img>
+                        <ProblemImageList src={FirstProblem1} alt=""></ProblemImageList>
+                        <ProblemImageList src={FirstProblem2} alt=""></ProblemImageList>
                       </ProblemImage>
                       <SIcon />
                       <ProblemImage>
-                        <img src={FirstSolution1} alt="" style={style}></img>
-                        <img src={FirstSolution2} alt="" style={style}></img>
+                        <ProblemImageList src={FirstSolution1} alt=""></ProblemImageList>
+                        <ProblemImageList src={FirstSolution2} alt=""></ProblemImageList>
                       </ProblemImage>
                     </ProblemImageContainer>
                     <SubTitleProblem>Problems</SubTitleProblem>
