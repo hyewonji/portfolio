@@ -53,10 +53,10 @@ const ImageContainer = styled.div`
     overflow: scroll;
 `
 
-const Image = styled.div`
+const Image = styled.img`
     width: 100%;
     height: 70vh;
-    background : url(${props => props.img}) center center/cover no-repeat;
+    //background : url(${props => props.img}) center center/cover no-repeat;
 `
 
 export const WWWImgSlider = () => 
@@ -78,7 +78,7 @@ export const WWWImgSlider = () =>
             {items.map((item,i) =>
                 <Paper>
                     <ImageContainer>
-                        <Image img={item} key={i}/>
+                        <Image src={item} key={i}/>
                     </ImageContainer>
                 </Paper> )}
         </Carousel> 
@@ -104,7 +104,7 @@ export const MovieDockerImgSlider = () =>
             {items.map((item,i) =>
                 <Paper>
                     <ImageContainer>
-                        <Image img={item} key={i}/>
+                        <Image src={item} key={i}/>
                     </ImageContainer>
                 </Paper> )}
         </Carousel> 
@@ -130,7 +130,7 @@ export const PurpleToDoListImageSlider = () =>
             {items.map((item,i) =>
                 <Paper>
                     <ImageContainer>
-                        <Image img={item} key={i}/>
+                        <Image src={item} key={i}/>
                     </ImageContainer>
                 </Paper> )}
         </Carousel> 
@@ -156,7 +156,7 @@ export const SearchRecruitmentImageSlider = () =>
             {items.map((item,i) =>
                 <Paper>
                     <ImageContainer>
-                        <Image img={item} key={i}/>
+                        <Image src={item} key={i}/>
                     </ImageContainer>
                 </Paper> )}
         </Carousel> 
@@ -182,7 +182,7 @@ export const SubRedditImageSlider = () =>
             {items.map((item,i) =>
                 <Paper>
                     <ImageContainer>
-                        <Image img={item} key={i}/>
+                        <Image src={item} key={i}/>
                     </ImageContainer>
                 </Paper> )}
         </Carousel> 

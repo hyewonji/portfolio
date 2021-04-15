@@ -8,8 +8,6 @@ import { StudyImageSlider, StudyImageSlider2, TechStackFrontend, TechStackBacken
 
 import { fadein } from '../Components/Keyframe';
 
-import MediaQuery from '../Components/MediaQuery';
-
 import FirstProblem1 from '../Images/About/FirstProblem1.png';
 
 import FirstProblem2 from '../Images/About/FirstProblem2.png';
@@ -20,13 +18,16 @@ import FirstSolution2 from '../Images/About/FirstSolution2.png';
 
 import { MdArrowForward } from "react-icons/md";
 
+
+const BREAK_POINT_MOBILE = 768;
+
 const Main = styled.main`
   width: 100vw;
-  padding: 60px 11% 60px 11%;
+  padding: 60px 11%;
   height: auto;
   animation: 2s ${fadein} ease-in-out;
   @media screen and (max-width: 768px){
-  padding: 60px 5% 60px 5%;
+  padding: 60px 5%;
   } 
 `
 
@@ -189,7 +190,7 @@ const ProblemImageList = styled.img`
 
 
 function About(){
-  console.log(MediaQuery);
+
   return (
     <>
       <Main>
