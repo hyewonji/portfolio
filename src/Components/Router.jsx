@@ -19,7 +19,7 @@ export default () => (
     <Router>
       <Helmet>
         <link rel='icon' href="https://img.icons8.com/doodle/50/000000/tulip.png" />
-        <title>CodeMon</title>
+        <title>PORTFOLIO | JIHYEWON</title>
       </Helmet>
       <Navigation />
       <Switch>
