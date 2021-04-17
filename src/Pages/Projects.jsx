@@ -51,7 +51,7 @@ const Image = styled.div`
     overflow-x: scroll;
     @media screen and (max-width: 768px){  
         width: 100%;
-        height: 60vh;
+        height: auto;
     }
 `
 const Content = styled.div`

@@ -18,8 +18,7 @@ import { Helmet } from 'react-helmet';
 export default () => (
     <Router>
       <Helmet>
-        <link rel='icon' href="https://img.icons8.com/doodle/50/000000/tulip.png" />
-        <title>PORTFOLIO | JIHYEWON</title>
+        <title>hye1.portfolio</title>
       </Helmet>
       <Navigation />
       <Switch>

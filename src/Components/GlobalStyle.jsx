@@ -26,7 +26,7 @@ const GlobalStyles = createGlobalStyle`
         display:flex;
         width: 100vw;
         height: auto;
-        overflow: scroll;
+        //overflow: scroll;
     }
     a{
         color: #0f0f0f;

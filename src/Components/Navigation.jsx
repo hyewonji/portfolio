@@ -22,7 +22,7 @@ const NavBar = styled.div`
 const Title = styled.h1`
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100%;
     padding: 20px 40px;
     font-size: 23px;
@@ -80,7 +80,7 @@ const Navigatoin = withRouter(({ location: { pathname } }) => {
             <NavBar>
                 <Title> 
                     <Link to="/" style={{color: 'white'}}>
-                        PORTFOLIO
+                        hye1.portfolio
                     </Link> 
                 </Title>
                 <Bars navOpen={navOpen}><MdKeyboardArrowDown onClick={onClick} style={{color: 'white'}}/></Bars>
