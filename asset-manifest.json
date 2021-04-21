@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/portfolio/static/js/main.5bf18c69.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.5bf18c69.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.3c6eb3ad.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.3c6eb3ad.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.a9f76519.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.a9f76519.js.map",
     "static/js/2.41048cef.chunk.js": "/portfolio/static/js/2.41048cef.chunk.js",
@@ -9,7 +9,7 @@
     "index.html": "/portfolio/index.html",
     "static/js/2.41048cef.chunk.js.LICENSE.txt": "/portfolio/static/js/2.41048cef.chunk.js.LICENSE.txt",
     "static/media/AddCity.c5a7e672.png": "/portfolio/static/media/AddCity.c5a7e672.png",
-    "static/media/Detail.f4ebd0e3.png": "/portfolio/static/media/Detail.f4ebd0e3.png",
+    "static/media/Detail.4f6ba5d0.png": "/portfolio/static/media/Detail.4f6ba5d0.png",
     "static/media/FirstProblem1.0f87a311.png": "/portfolio/static/media/FirstProblem1.0f87a311.png",
     "static/media/FirstProblem2.89d07df6.png": "/portfolio/static/media/FirstProblem2.89d07df6.png",
     "static/media/FirstSolution1.7eae4586.png": "/portfolio/static/media/FirstSolution1.7eae4586.png",
@@ -24,7 +24,7 @@
     "static/media/RedditHome.02242809.png": "/portfolio/static/media/RedditHome.02242809.png",
     "static/media/RedditReport.72239608.png": "/portfolio/static/media/RedditReport.72239608.png",
     "static/media/Repl.8800fc2e.png": "/portfolio/static/media/Repl.8800fc2e.png",
-    "static/media/Search.14ec3fba.png": "/portfolio/static/media/Search.14ec3fba.png",
+    "static/media/Search.463b237d.png": "/portfolio/static/media/Search.463b237d.png",
     "static/media/Study1.9eed3ada.png": "/portfolio/static/media/Study1.9eed3ada.png",
     "static/media/Study2.8169a82f.png": "/portfolio/static/media/Study2.8169a82f.png",
     "static/media/Study4.7e744481.png": "/portfolio/static/media/Study4.7e744481.png",
@@ -37,6 +37,6 @@
   "entrypoints": [
     "static/js/runtime-main.a9f76519.js",
     "static/js/2.41048cef.chunk.js",
-    "static/js/main.5bf18c69.chunk.js"
+    "static/js/main.3c6eb3ad.chunk.js"
   ]
 }
