@@ -51,9 +51,6 @@ const ImageContainer = styled.div`
     width: 100%;
     background: #F2F2F2;
     overflow: scroll;    
-    &::-webkit-scrollbar{
-        display:none;
-    }
 `
 
 const Image = styled.img`

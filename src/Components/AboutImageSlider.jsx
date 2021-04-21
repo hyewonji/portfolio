@@ -44,10 +44,6 @@ const ImageContainer = styled.div`
     width: 100%;
     background: #F2F2F2;
     overflow: hidden;
-    &::-webkit-scrollbar{
-        display:none;
-    }
-    //transform: translateX(-(selected-1)*300px);
 `
 
 const Image = styled.div`

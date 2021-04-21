@@ -19,6 +19,9 @@ const GlobalStyles = createGlobalStyle`
         text-decoration:none;
         list-style:none;
         font-family: 'Mulish', sans-serif;
+        &::-webkit-scrollbar{
+            display:none;
+        }
     }
 
     html,
@@ -27,9 +30,7 @@ const GlobalStyles = createGlobalStyle`
         display:flex;
         width: 100vw;
         height: auto;
-        &::-webkit-scrollbar{
-            display:none;
-        }
+
     }
 
     a{
