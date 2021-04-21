@@ -20,17 +20,22 @@ const GlobalStyles = createGlobalStyle`
         list-style:none;
         font-family: 'Mulish', sans-serif;
     }
+
     html,
     body{
         padding-top: 50px;
         display:flex;
         width: 100vw;
         height: auto;
-        //overflow: scroll;
+        &::-webkit-scrollbar{
+            display:none;
+        }
     }
+
     a{
         color: #0f0f0f;
     }
+
     h1{
         color: #3a3a3a;
     }

@@ -47,8 +47,6 @@ const Image = styled.div`
     height: 70vh;
     border: solid 1px #ececec;
     border-right: none;
-    overflow-y: scroll;
-    overflow-x: scroll;
     @media screen and (max-width: 768px){  
         width: 100%;
         height: auto;
@@ -61,7 +59,10 @@ const Content = styled.div`
     background: #F2F2F2;
     display: flex;
     flex-direction: column;
-    overflow: scroll;
+    overflow: auto;
+    &::-webkit-scrollbar{
+        display:none;
+    }
     @media screen and (max-width: 768px){  
         width: 100%;
         height: auto;

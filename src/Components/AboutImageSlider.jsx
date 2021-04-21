@@ -43,7 +43,10 @@ const ImageContainer = styled.div`
     align-items: center;
     width: 100%;
     background: #F2F2F2;
-    overflow: scroll;
+    overflow: hidden;
+    &::-webkit-scrollbar{
+        display:none;
+    }
     //transform: translateX(-(selected-1)*300px);
 `
 
