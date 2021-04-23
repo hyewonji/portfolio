@@ -181,6 +181,7 @@ const SIcon = styled(MdArrowForward)`
 
 const ET = styled.span`
   font-weight: 400;
+  color: #3a3a3a;
 `
 
 const ProblemImageList = styled.img`

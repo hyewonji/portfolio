@@ -76,7 +76,7 @@ const  Title = styled.h1`
 
 const Discription = styled.div`
     width: 100%;
-    font-weight: 300;
+    font-weight: 100;
     font-size: 19px;
     margin-bottom: 30px;
     line-height:1.5;
@@ -104,7 +104,8 @@ const UrlIcon = styled.img`
 `
 
 const Url = styled.a`
-    font-weight:300;
+    font-weight:100;
+    font-size: 15px;
 `
 
 const ET = styled.span`

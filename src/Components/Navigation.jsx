@@ -28,7 +28,7 @@ const Title = styled.h1`
     font-size: 23px;
     color: white;
     background: #24292F;
-    //font-weight: 500;
+    font-weight: 500;
 `
 
 const Bars = styled.div`
@@ -62,7 +62,7 @@ const List = styled.div`
 const Item = styled.div`
     padding: 20px;
     color: ${props => props.current ? "#6FAA55" : "#3d3d3d"};
-    //font-weight: ${props => props.current ? "700" : "400"};
+    font-weight: ${props => props.current ? "700" : "400"};
     &:hover{
         cursor: pointer;
     }

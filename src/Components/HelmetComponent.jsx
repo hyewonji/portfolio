@@ -5,8 +5,7 @@ import { Helmet } from 'react-helmet';
 
 const HelmetComponent = ({title}) => (
     <Helmet>
-        <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css' />
-        <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css' rel='stylesheet' type='text/css' />
+        <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'></link>
         <title>{title}</title>
     </Helmet>
 )
