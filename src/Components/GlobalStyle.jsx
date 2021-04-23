@@ -7,18 +7,20 @@ const GlobalStyles = createGlobalStyle`
 
     ${reset};
 
-    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;600;700&display=swap');
+    //@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;600;700&display=swap');
+    //@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;400;500;600&display=swap');
+    //@import url('https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css');
 
     *{  
         line-height:1.5;
-        font-family: 'Noto Sans KR', sans-serif;
+        //font-family: 'Noto Sans KR', sans-serif;
+        //font-family: 'Spoqa Han Sans Neo', 'Spoqa Han Sans JP', sans-serif;
         box-sizing: border-box;
         margin:0;
         padding:0;
         outline:none;
         text-decoration:none;
         list-style:none;
-        font-family: 'Mulish', sans-serif;
         &::-webkit-scrollbar{
             display:none;
         }
@@ -30,6 +32,9 @@ const GlobalStyles = createGlobalStyle`
         display:flex;
         width: 100vw;
         height: auto;
+        font-family: 'Spoqa Han Sans Neo', 'Spoqa Han Sans JP', sans-serif;
+        //font-family: 'Gothic A1', sans-serif;
+        //font-family: 'Noto Sans KR', sans-serif;
 
     }
 

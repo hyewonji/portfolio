@@ -2,6 +2,8 @@ import React from 'react';
 
 import styled from 'styled-components';
 
+import HelmetComponent from '../Components/HelmetComponent';
+
 import ReactTypingEffect from 'react-typing-effect';
 
 import ProfileImg from '../Images/ProfileImg.jpeg';
@@ -30,13 +32,13 @@ const Title = styled.div`
 
 const TitleName = styled.h1`
     color: #9178d1;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 60px;
 `
 const TitlePosition = styled.h5`
     color: #cfc6e6;
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 400;
 `
 
 const Profile = styled.div`
@@ -82,35 +84,38 @@ const Contents = styled.p`
 
 function Home(){
     return ( 
-        <Main>
-            <Title>
-                <TitleName>JI HYE WON</TitleName>
-                <TitlePosition>Frontend Developer, Web Publisher</TitlePosition>
-            </Title>
-            <Profile>
-                <Image src={ProfileImg}></Image>
-                <ContentsContainer>
-                    <Greet >안녕하세요.</Greet><br/>
-                    <ReactTypingEffect
-                        speed={70}
-                        eraseSpeed={70}
-                        eraseDelay={600}
-                        typingDelay={600}
-                        text={[
-                            "함께 성장하고자 하는 개발자의 문화를 사랑하고, 탐구하는것을 즐기는 늦바람난 개발자입니다.", 
-                            "‘지금 이순간 춤을 춰라'라는 말을 좋아하며, 근성과 도전정신으로 끊임없이 성장하고자 합니다.",
-                            "트렌드를 받아들이고 적용해보며 새로운 변화에 적응하는 개발자가 되고싶습니다."]}
-                        displayTextRenderer={(text, i) => {
-                            return (
-                                <Contents>
-                                    {text}
-                                </Contents>
-                              );
-                            }} 
-                    />
-                </ContentsContainer>
-            </Profile>
-        </Main>
+        <>
+            <HelmetComponent title="Introduce"/>
+            <Main>
+                <Title>
+                    <TitleName>JI HYE WON</TitleName>
+                    <TitlePosition>Frontend Developer, Web Publisher</TitlePosition>
+                </Title>
+                <Profile>
+                    <Image src={ProfileImg}></Image>
+                    <ContentsContainer>
+                        <Greet >안녕하세요.</Greet><br/>
+                        <ReactTypingEffect
+                            speed={70}
+                            eraseSpeed={70}
+                            eraseDelay={600}
+                            typingDelay={600}
+                            text={[
+                                "함께 성장하고자 하는 개발자의 문화를 사랑하고, 탐구하는것을 즐기는 늦바람난 개발자입니다.", 
+                                "‘지금 이순간 춤을 춰라'라는 말을 좋아하며, 근성과 도전정신으로 끊임없이 성장하고자 합니다.",
+                                "트렌드를 받아들이고 적용해보며 새로운 변화에 적응하는 개발자가 되고싶습니다."]}
+                            displayTextRenderer={(text, i) => {
+                                return (
+                                    <Contents>
+                                        {text}
+                                    </Contents>
+                                );
+                                }} 
+                        />
+                    </ContentsContainer>
+                </Profile>
+            </Main>
+        </>
     )
 }
 

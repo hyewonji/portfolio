@@ -12,14 +12,9 @@ import Projects from '../Pages/Projects';
 
 import Contact from './Contact';
 
-import { Helmet } from 'react-helmet';
-
 
 export default () => (
     <Router>
-      <Helmet>
-        <title>hye1.portfolio</title>
-      </Helmet>
       <Navigation />
       <Switch>
         <Route path = '/' exact component={Introduce}></Route>

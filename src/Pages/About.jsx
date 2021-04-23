@@ -4,6 +4,8 @@ import styled from 'styled-components';
 
 import Github from '../Images/About/Github.png';
 
+import HelmetComponent from '../Components/HelmetComponent';
+
 import { StudyImageSlider, StudyImageSlider2, TechStackFrontend, TechStackBackend } from '../Components/AboutImageSlider';
 
 import { fadein } from '../Components/Keyframe';
@@ -68,7 +70,8 @@ const List = styled.div`
 `
 
 const ContentTitle = styled.div`
-  font-size: 16px;
+  font-size: 14px;
+  color: #818181;
   width: 140px;
   margin-bottom: 30px;
   display: flex;
@@ -92,7 +95,7 @@ const Content = styled.div`
 `
 const DiscriptionTitle = styled.h3`
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: 30px;
 `
 const DiscriptionContainer = styled.ul``
@@ -193,6 +196,7 @@ function About(){
 
   return (
     <>
+      <HelmetComponent title="About"/>
       <Main>
         <Line>
           <Dot color='#FFE59A' margin='575px'></Dot>
