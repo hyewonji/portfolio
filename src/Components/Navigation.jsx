@@ -25,10 +25,10 @@ const Title = styled.h1`
     justify-content: flex-start;
     width: 100%;
     padding: 20px 40px;
-    font-size: 23px;
+    font-size: 20px;
     color: white;
     background: #24292F;
-    font-weight: 500;
+    font-weight: 400;
 `
 
 const Bars = styled.div`
