@@ -76,9 +76,9 @@ export const WWWImgSlider = () =>
         }}
         >
             {items.map((item,i) =>
-                <Paper>
+                <Paper key={i}>
                     <ImageContainer>
-                        <Image src={item} key={i}/>
+                        <Image src={item} />
                     </ImageContainer>
                 </Paper> )}
         </Carousel> 
@@ -102,9 +102,9 @@ export const MovieDockerImgSlider = () =>
         }}
         >
             {items.map((item,i) =>
-                <Paper>
+                <Paper key={i}>
                     <ImageContainer>
-                        <Image src={item} key={i}/>
+                        <Image src={item} />
                     </ImageContainer>
                 </Paper> )}
         </Carousel> 
@@ -128,9 +128,9 @@ export const PurpleToDoListImageSlider = () =>
         }}
         >
             {items.map((item,i) =>
-                <Paper>
+                <Paper key={i}>
                     <ImageContainer>
-                        <Image src={item} key={i}/>
+                        <Image src={item} />
                     </ImageContainer>
                 </Paper> )}
         </Carousel> 
@@ -154,9 +154,9 @@ export const SearchRecruitmentImageSlider = () =>
         }}
         >
             {items.map((item,i) =>
-                <Paper>
+                <Paper key={i}>
                     <ImageContainer>
-                        <Image src={item} key={i}/>
+                        <Image src={item} />
                     </ImageContainer>
                 </Paper> )}
         </Carousel> 
@@ -180,9 +180,9 @@ export const SubRedditImageSlider = () =>
         }}
         >
             {items.map((item,i) =>
-                <Paper>
+                <Paper key={i}>
                     <ImageContainer>
-                        <Image src={item} key={i}/>
+                        <Image src={item} />
                     </ImageContainer>
                 </Paper> )}
         </Carousel> 

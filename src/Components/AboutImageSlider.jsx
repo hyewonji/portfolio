@@ -81,9 +81,9 @@ export const StudyImageSlider = (props) =>
         }}
         >
             {items.map((item,i) =>
-                <Paper>
+                <Paper key={i} >
                     <ImageContainer>
-                        <Image img={item} i={i}/>
+                        <Image img={item}/>
                     </ImageContainer>
                 </Paper> )}
         </Carousel>
@@ -106,10 +106,10 @@ export const StudyImageSlider2 = (props) =>
             }
         }}
         >
-            {items.map((item,i) =>
-                <Paper>
+            {items.map((item, index) =>
+                <Paper key={index}>
                     <ImageContainer>
-                        <Image img={item} i={i}/>
+                        <Image img={item}/>
                     </ImageContainer>
                 </Paper> )}
         </Carousel>
