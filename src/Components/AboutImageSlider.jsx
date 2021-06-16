@@ -10,6 +10,8 @@ import ArrowForwardIos from '@material-ui/icons/ArrowForwardIos';
 
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 
+import Tooltiop from './Tooltip';
+
 import Study1 from '../Images/About/Study1.png';
 
 import Study2 from '../Images/About/Study2.png';
@@ -27,6 +29,8 @@ import JS from '../Images/Icon/JS.png';
 import ReactI from '../Images/Icon/ReactI.png';
 
 import Redux from '../Images/Icon/Redux.png';
+
+import Expo from '../Images/Icon/Expo.png';
 
 import Python from '../Images/Icon/Python.png';
 
@@ -119,11 +123,24 @@ export const StudyImageSlider2 = (props) =>
 export const TechStackFrontend = () => {
     return (
         <IconContainer>
+            <Tooltiop message="HTML">
                 <img src={HTML} alt="" style={icon}/>
+            </Tooltiop>
+            <Tooltiop message="CSS">
                 <img src={CSS} alt="" style={icon}/>
+            </Tooltiop>
+            <Tooltiop message="JS">
                 <img src={JS} alt="" style={icon}/>
+            </Tooltiop>
+            <Tooltiop message={`React\nReactNative`}>
                 <img src={ReactI} alt="" style={icon}/>
+            </Tooltiop>
+            <Tooltiop message="Redux">
                 <img src={Redux} alt="" style={icon}/>
+            </Tooltiop>
+            <Tooltiop message="Expo">
+                <img src={Expo} alt="" style={icon}/>
+            </Tooltiop>
         </IconContainer>
     )
 }
@@ -131,10 +148,18 @@ export const TechStackFrontend = () => {
 export const TechStackBackend = () => {
     return (
         <IconContainer>
+            <Tooltiop message="Python">
                 <img src={Python} alt="" style={icon}/>
+            </Tooltiop>
+            <Tooltiop message="NodeJS">
                 <img src={NodeJS} alt="" style={icon}/>
+            </Tooltiop>
+            <Tooltiop message="MongoDB">
                 <img src={MongoDB} alt="" style={icon}/>
+            </Tooltiop>
+            <Tooltiop message="Git">
                 <img src={Git} alt="" style={icon}/>
+            </Tooltiop>
         </IconContainer>
     )
 }
